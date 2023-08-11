@@ -1,0 +1,24 @@
+html {
+    color: white;
+    background-color: black;
+}
+
+#app-link {
+    color: white;
+    background-color: black;
+}
+
+#buttons {
+    color: white;
+    background-color: black;
+    border-color: black;
+    font-size: medium;
+}
+
+#skills-summary {
+    font-size: large;
+}
+
+#dev-tools {
+    font-size: large;
+}
