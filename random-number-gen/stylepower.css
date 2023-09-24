@@ -1,6 +1,35 @@
 body {
     margin: 0;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+#buttons {
+    color: white;
+    background-color: black;
+    border-color: black;
+    font-size: medium;
+}
+
+#buttons-div {
+    padding: 2vw;
+    float: left;
+}
+
+#instructions {
+    padding-top: 3vh;
+    padding-left: 0vh;
+}
+
+#buttons-div:details {
+    float: right;
+}
+
+#header-div {
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
 }
 
 #generador { text-align: center; }
@@ -8,6 +37,11 @@ body {
     text-align: center;
     align-self: center;
     vertical-align: middle;
+}
+
+.colorination {
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
 
 #userNumber {
@@ -48,18 +82,23 @@ body {
 }
 
 .color-container {
-    background-color: none;
+    background-color: black;
     width: 200px;
     height: 100px;
-    color: antiquewhite;
+    color: white;
     margin: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 17px;
     text-shadow: 2px 2px 4px rgba(0,0,0,.5) ;
-    border: solid black 3px;
+    border: solid white 3px;
     border-radius: 5px;
+}
+
+.pressdiv {
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
 
 
@@ -71,7 +110,7 @@ body {
 }
 
 .contenedor-contador {
-    justify-content: center;;
+    justify-content: center;
     display: flex;
     align-items: center;
     height: 20vh;
@@ -101,6 +140,7 @@ body {
 #dadohide {
     position: relative;
     align-items: center;
+    padding-left: 2vh;
 }
 
 #dadorojo {

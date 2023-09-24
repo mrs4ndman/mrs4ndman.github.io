@@ -34,14 +34,14 @@ function randColorgen() {
 function colorClearing() {
     colorContenedorElements.forEach(
         (colorContenedorElem) => {
-            colorContenedorElem.style.backgroundColor = "#FFFFFF";
+            colorContenedorElem.style.backgroundColor = "#000";
     });
 }
 
 document.getElementById("reset").onclick = colorClearing
 
 function ColorAleatorium() {
-    const caracter = "0123456789abcdef";
+    const caracter = "0123456789aAbBcCdDeEfF";
     const longitudCodigoColor = 6;
     let codigoColor = "";
     for (let index = 0; index < longitudCodigoColor; index++) {
