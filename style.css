@@ -108,12 +108,118 @@ footer {
   color: var(--btn-text);
 }
 
-/* Responsive */
+/* Responsive — tamaños ampliados para móvil */
 @media (max-width: 768px) {
   body {
-    padding: 10px;
+    padding: 16px;
+    font-size: 18px; /* base de texto ligeramente mayor */
   }
+
+  .main-title {
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-top: 4px;
+  }
+
+  header, .tech-stack, #projects, #sandbox {
+    text-align: center;
+  }
+
+  /* Botones más grandes y cómodos de tocar */
+  button, .btn {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: 1px solid var(--btn-hover-bg);
+    padding: 14px 22px; /* mayor área táctil */
+    margin: 10px auto;
+    font-size: 1.05rem;
+    border-radius: 10px;
+    display: block;
+    width: auto;
+    max-width: 92%;
+  }
+
+  .btn-github {
+    font-size: 1.25em;
+    padding: 14px 28px;
+  }
+
+  /* Sandbox: textarea más alto y texto más grande */
+  #sandbox {
+    margin-top: 24px;
+    padding: 18px;
+    border-radius: 10px;
+  }
+
   #sandbox textarea {
-    height: 150px;
+    width: 100%;
+    height: 260px; /* más alto para editar en móvil */
+    background: #1e1e1e;
+    color: #00ff88;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-family: monospace;
+    font-size: 0.98rem;
+    box-sizing: border-box;
+  }
+
+  .sandbox-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .sandbox-buttons .btn {
+    width: 90%;
+    max-width: 420px;
+  }
+
+  #sandbox-output {
+    margin-top: 15px;
+    padding: 14px;
+    min-height: 56px;
+    background: var(--btn-bg);
+    color: var(--text-color);
+    border-radius: 8px;
+    font-size: 0.98rem;
+  }
+
+  /* Select más grande */
+  #examples {
+    margin: 12px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--btn-hover-bg);
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    font-size: 1rem;
+    width: 95%;
+    max-width: 420px;
+  }
+
+  /* Iconos más grandes para mejor lectura */
+  .icons-row img {
+    width: 56px;
+    height: 56px;
+    margin: 6px;
+  }
+
+  .small-btns .btn {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin: 8px auto;
+  }
+
+  /* Ajustes de pie de página */
+  footer {
+    margin-top: 28px;
+    font-size: 0.95rem;
   }
 }
