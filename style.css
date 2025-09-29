@@ -1,24 +1,119 @@
-html {
-    color: white;
-    background-color: black;
+:root {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --btn-bg: #222222;
+  --btn-hover-bg: #444444;
+  --btn-text: #ffffff;
+  --sub-bg: rgba(0, 0, 0, 0.7);
 }
 
-#app-link {
-    color: white;
-    background-color: black;
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --btn-bg: #dddddd;
+  --btn-hover-bg: #cccccc;
+  --btn-text: #000000;
+  --sub-bg: rgba(255, 255, 255, 0.7);
 }
 
-#buttons {
-    color: white;
-    background-color: black;
-    border-color: black;
-    font-size: medium;
+html, body {
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#skills-summary {
-    font-size: large;
+header, .tech-stack, #projects, #sandbox {
+  text-align: center;
 }
 
-#dev-tools {
-    font-size: large;
+/* Botones */
+button, .btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: 1px solid var(--btn-hover-bg);
+  padding: 10px 20px;
+  margin: 10px auto;
+  display: block;
+  font-size: medium;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--btn-hover-bg);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Botón GitHub más grande */
+.btn-github {
+  font-size: 1.2em;
+  padding: 12px 28px;
+}
+
+/* Sandbox */
+#sandbox {
+  margin-top: 30px;
+  padding: 20px;
+  background: var(--sub-bg);
+  border-radius: 10px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sandbox textarea {
+  width: 100%;
+  height: 200px;
+  background: #1e1e1e;
+  color: #00ff88;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+.sandbox-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#sandbox-output {
+  margin-top: 15px;
+  padding: 10px;
+  min-height: 40px;
+  background: var(--btn-bg);
+  color: var(--text-color);
+  border-radius: 6px;
+}
+
+/* Footer centrado */
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#examples {
+  margin: 10px 0;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid var(--btn-hover-bg);
+  background: var(--btn-bg);
+  color: var(--btn-text);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  #sandbox textarea {
+    height: 150px;
+  }
 }
