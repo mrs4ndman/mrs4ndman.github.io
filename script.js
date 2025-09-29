@@ -188,11 +188,18 @@ const examplesCode = {
   };
 })();`,
 
-  bouncing: `// Bola rebotando por la pantalla
+bouncing: `// Bola rebotando por la pantalla (usa color guardado en localStorage)
 (function(){
   let ball = document.createElement("div");
   ball.id = "sandbox-bouncing";
-  ball.style.cssText = "position:fixed;left:50px;top:50px;width:40px;height:40px;border-radius:50%;background:#ff0066;pointer-events:none;";
+
+  // lee el color guardado o usa el color por defecto
+  const color = (function(){
+    try { return localStorage.getItem("sandbox_bouncing_color") || "#ff0066"; }
+    catch(e) { return "#ff0066"; }
+  })();
+
+  ball.style.cssText = "position:fixed;left:50px;top:50px;width:40px;height:40px;border-radius:50%;background:" + color + ";pointer-events:none;";
   document.body.appendChild(ball);
 
   let dx = 3, dy = 3;
@@ -248,6 +255,26 @@ if (resetBtn) {
     sandboxCode.value = "";
     if (examples) { examples.value = ""; }
     outputDiv.textContent = "🔄 Sandbox reseteado.";
+  });
+}
+
+
+// Inicializa el color picker para la pelota y lo sincroniza con localStorage
+const bouncingColorPicker = document.getElementById("sandbox-bouncing-color");
+const savedBouncingColor = localStorage.getItem("sandbox_bouncing_color") || "#ff0066";
+
+if (bouncingColorPicker) {
+  bouncingColorPicker.value = savedBouncingColor;
+
+  bouncingColorPicker.addEventListener("input", (e) => {
+    const color = e.target.value;
+    localStorage.setItem("sandbox_bouncing_color", color);
+
+    // Si la pelota ya existe en DOM (ej. ejemplo en ejecución), la actualizamos en tiempo real
+    const runningBall = document.getElementById("sandbox-bouncing");
+    if (runningBall) {
+      runningBall.style.background = color;
+    }
   });
 }
 
