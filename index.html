@@ -1,121 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio and project website" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://avatars.githubusercontent.com/u/121260905?v=4"
+    />
+    <title>Juan Mañanes - mrs4ndman.dev</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio and project website" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/121260905?v=4">
-  <title>Juan Mañanes - mrs4ndman.dev</title>
-</head>
+  <body>
+    <header>
+      <h1 class="main-title">My portfolio :)</h1>
+      <h1 class="main-title">Juan Mañanes</h1>
 
-<body>
-  <header>
-    <h1 class="main-title">My portfolio :) - Juan Mañanes</h1>
-
-    <div class="header-controls">
-      <div class="theme-controls">
-        <button class="btn" id="themeToggle" aria-label="Cambiar tema">Dark / Light</button>
-        <label class="color-label">Background picker → 
-          <input type="color" id="bgPicker" aria-label="Selector de color de fondo">
-        </label>
-      </div>
-    </div>
-
-    <h2 class="subtitle"><i>Everything here can be found on my GitHub || Todo esto se puede encontrar en mi GitHub</i></h2>
-    <button class="btn btn-github" onclick="window.location.href='https://github.com/mrs4ndman';" aria-label="Ir a GitHub">🌐 GitHub</button>
-  </header>
-
-  <main>
-    <section id="start">
-      <div class="tech-stack">
-        <details>
-          <summary id="skills-summary">Skills</summary>
-          <p id="novice">Novice || Novato:</p>
-          <div class="icons-row">
-            <a href="https://javascript.com" aria-label="JavaScript"><img src="https://skillicons.dev/icons?i=js" /></a>
-            <a href="https://www.iso.org/standard/74528.html" aria-label="C"><img src="https://skillicons.dev/icons?i=c" /></a>
-            <a href="https://www.rust-lang.org/" aria-label="Rust"><img src="https://skillicons.dev/icons?i=rust" /></a>
-          </div>
-
-          <p id="intermediate">Intermediate</p>
-          <div class="icons-row">
-            <a href="https://www.java.com/en/" aria-label="Java"><img src="https://skillicons.dev/icons?i=java" /></a>
-            <a href="https://en.wikipedia.org/wiki/Lua_(programming_language)" aria-label="Lua"><img src="https://skillicons.dev/icons?i=lua" /></a>
-            <a href="https://www.gnu.org/software/bash/" aria-label="Bash"><img src="https://skillicons.dev/icons?i=bash"></a>
-            <a href="https://html.spec.whatwg.org/" aria-label="HTML"><img src="https://skillicons.dev/icons?i=html" /></a>
-            <a href="https://www.w3.org/TR/CSS/#css" aria-label="CSS"><img src="https://skillicons.dev/icons?i=css"></a>
-          </div>
-        </details>
-
-          <br>
-
-        <details>
-          <summary id="dev-tools">Dev Tools || Herramientas de desarrollo</summary>
-          <div class="icons-row">
-              <a href="https://neovim.io/"><img src="https://skillicons.dev/icons?i=neovim"></a>
-              <a href="https://tmux.github.io"><img src="https://avatars.githubusercontent.com/u/12054114?s=48&v=4"></a>
-              <a href="https://i3wm.org/"><img src="https://www.pikpng.com/pngl/b/501-5018854_i3-window-manager-logo-i3wm-logo-clipart.png" width=48></a>
-              <a href="https://code.visualstudio.com/"><img src="https://skillicons.dev/icons?i=vscode" /></a>
-              <a href="https://www.jetbrains.com/idea/"><img src="https://skillicons.dev/icons?i=idea" /></a>
-            <!-- <a href="https://obsidian.md/"><img height="48" src="https://obsidian.md/images/obsidian-logo-gradient.svg" /></a> -->
-          </div>
-        </details>
-          <br>
-
-        <h2>↓ Not so serious projects ↓</h2>
-        <div class="small-btns">
-          <button class="btn" onclick="window.location.href='./random-number-gen';">My first HTML-CSS-JS "app"</button>
-          <button class="btn" onclick="window.location.href='https://blog.mrs4ndman.dev';">WIP: My blog subdomain</button>
-        </div>
-      </div>
-    </section>
-          <br>
-
-    <section id="projects">
-      <h2>↓ Serious projects ↓</h2>
-      <div class="rose-pine">
-        <a href="https://github.com/rose-pine/tmux"><img src="https://img.shields.io/badge/tmux-Ros%C3%A9%20Pine%20-%23ebbcba" alt="tmux"></a>
-        <a href="https://github.com/rose-pine/btop"><img src="https://img.shields.io/badge/btop-Ros%C3%A9%20Pine%20-%23ebbcba" alt="btop"></a>
-      </div>
-    </section>
-
-    <!-- Mini sandbox -->
-    <section id="sandbox" aria-live="polite">
-      <h2>🎮 Mini JavaScript Sandbox</h2>
-      <label for="examples">Ejemplos rápidos:</label>
-      <select id="examples" aria-label="Selector de ejemplos">
-        <option value="">-- Selecciona un ejemplo --</option>
-        <option value="circle">Círculo que sigue al ratón</option>
-        <option value="counter">Contador en consola</option>
-        <option value="bouncing">Bola rebotando en pantalla</option>
-      </select>
-
-      <div class="sandbox-box">
-          <label for="sandbox-bouncing-color" style="display:block; margin-bottom:8px;">
-            Color pelota:
-            <input id="sandbox-bouncing-color" type="color" aria-label="Color pelota sandbox">
+      <div class="header-controls">
+        <div class="theme-controls">
+          <button class="btn" id="themeToggle" aria-label="Cambiar tema">
+            Dark / Light
+          </button>
+          <label class="color-label"
+            >Background picker →
+            <input
+              type="color"
+              id="bgPicker"
+              aria-label="Selector de color de fondo"
+            />
           </label>
-        <textarea id="sandbox-code" aria-label="Editor de código">// Escribe tu JS aquí</textarea>
-        <div class="sandbox-actions">
-          <div class="sandbox-buttons">
-            <button id="sandbox-run" class="btn">▶ Ejecutar</button>
-            <button id="sandbox-reset" class="btn">🔄 Reset</button>
-          </div>
-          <div id="sandbox-output" class="sandbox-output" aria-live="polite"></div>
         </div>
       </div>
-    </section>
-  </main>
 
-  <footer>
-    <p><span id="year"></span> - Author: Juan Mañanes - Hosted from
-      <a href="https://github.com/mrs4ndman/mrs4ndman.github.io">GitHub Pages</a>
-    </p>
-  </footer>
+      <h2 class="subtitle">
+        <i
+          >Everything here can be found on my GitHub || Todo esto se puede
+          encontrar en mi GitHub</i
+        >
+      </h2>
+      <button
+        class="btn btn-github"
+        onclick="window.location.href='https://github.com/mrs4ndman';"
+        aria-label="Ir a GitHub"
+      >
+        🌐 GitHub
+      </button>
+    </header>
 
-  <script src="script.js"></script>
-</body>
+    <main>
+      <section id="projects">
+        <h2>↓ Serious projects ↓</h2>
+        <div class="rose-pine">
+          <a href="https://github.com/rose-pine/tmux"
+            ><img
+              src="https://img.shields.io/badge/tmux-Ros%C3%A9%20Pine%20-%23ebbcba"
+              alt="tmux"
+          /></a>
+          <a href="https://github.com/rose-pine/btop"
+            ><img
+              src="https://img.shields.io/badge/btop-Ros%C3%A9%20Pine%20-%23ebbcba"
+              alt="btop"
+          /></a>
+        </div>
+      </section>
+      <br>
+      <section id="start">
+        <div class="tech-stack">
+          <details>
+            <summary id="skills-summary">Skills</summary>
+            <p id="novice">Novice || Novato:</p>
+            <div class="icons-row">
+              <a href="https://javascript.com" aria-label="JavaScript"
+                ><img src="https://skillicons.dev/icons?i=js"
+              /></a>
+              <a href="https://www.iso.org/standard/74528.html" aria-label="C"
+                ><img src="https://skillicons.dev/icons?i=c"
+              /></a>
+              <a href="https://www.rust-lang.org/" aria-label="Rust"
+                ><img src="https://skillicons.dev/icons?i=rust"
+              /></a>
+            </div>
+
+            <p id="intermediate">Intermediate</p>
+            <div class="icons-row">
+              <a href="https://www.java.com/en/" aria-label="Java"
+                ><img src="https://skillicons.dev/icons?i=java"
+              /></a>
+              <a
+                href="https://en.wikipedia.org/wiki/Lua_(programming_language)"
+                aria-label="Lua"
+                ><img src="https://skillicons.dev/icons?i=lua"
+              /></a>
+              <a href="https://www.gnu.org/software/bash/" aria-label="Bash"
+                ><img src="https://skillicons.dev/icons?i=bash"
+              /></a>
+              <a href="https://html.spec.whatwg.org/" aria-label="HTML"
+                ><img src="https://skillicons.dev/icons?i=html"
+              /></a>
+              <a href="https://www.w3.org/TR/CSS/#css" aria-label="CSS"
+                ><img src="https://skillicons.dev/icons?i=css"
+              /></a>
+            </div>
+          </details>
+
+          <br />
+
+          <details>
+            <summary id="dev-tools">
+              Dev Tools || Herramientas de desarrollo
+            </summary>
+            <div class="icons-row">
+              <a href="https://neovim.io/"
+                ><img src="https://skillicons.dev/icons?i=neovim"
+              /></a>
+              <a href="https://tmux.github.io"
+                ><img
+                  src="https://avatars.githubusercontent.com/u/12054114?s=48&v=4"
+              /></a>
+              <a href="https://i3wm.org/"
+                ><img
+                  src="https://www.pikpng.com/pngl/b/501-5018854_i3-window-manager-logo-i3wm-logo-clipart.png"
+                  width="48"
+              /></a>
+              <a href="https://code.visualstudio.com/"
+                ><img src="https://skillicons.dev/icons?i=vscode"
+              /></a>
+              <a href="https://www.jetbrains.com/idea/"
+                ><img src="https://skillicons.dev/icons?i=idea"
+              /></a>
+              <!-- <a href="https://obsidian.md/"><img height="48" src="https://obsidian.md/images/obsidian-logo-gradient.svg" /></a> -->
+            </div>
+          </details>
+          <br />
+
+          <h2>↓ Not so serious projects ↓</h2>
+          <div class="small-btns">
+            <button
+              class="btn"
+              onclick="window.location.href='./random-number-gen';"
+            >
+              My first HTML-CSS-JS "app"
+            </button>
+            <button
+              class="btn"
+              onclick="window.location.href='https://blog.mrs4ndman.dev';"
+            >
+              WIP: My blog subdomain
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mini sandbox -->
+      <section id="sandbox" aria-live="polite">
+        <h2>🎮 Mini JavaScript Sandbox</h2>
+        <label for="examples">Ejemplos rápidos:</label>
+        <select id="examples" aria-label="Selector de ejemplos">
+          <option value="">-- Selecciona un ejemplo --</option>
+          <option value="circle">Círculo que sigue al ratón</option>
+          <option value="counter">Contador en consola</option>
+          <option value="bouncing">Bola rebotando en pantalla</option>
+        </select>
+
+        <div class="sandbox-box">
+          <label
+            for="sandbox-bouncing-color"
+            style="display: block; margin-bottom: 8px"
+          >
+            Color pelota:
+            <input
+              id="sandbox-bouncing-color"
+              type="color"
+              aria-label="Color pelota sandbox"
+            />
+          </label>
+          <textarea id="sandbox-code" aria-label="Editor de código">
+// Escribe tu JS aquí</textarea
+          >
+          <div class="sandbox-actions">
+            <div class="sandbox-buttons">
+              <button id="sandbox-run" class="btn">▶ Ejecutar</button>
+              <button id="sandbox-reset" class="btn">🔄 Reset</button>
+            </div>
+            <div
+              id="sandbox-output"
+              class="sandbox-output"
+              aria-live="polite"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <span id="year"></span> - Author: Juan Mañanes - Hosted from
+        <a href="https://github.com/mrs4ndman/mrs4ndman.github.io"
+          >GitHub Pages</a
+        >
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
