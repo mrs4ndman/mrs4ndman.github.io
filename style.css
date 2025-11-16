@@ -120,11 +120,6 @@ footer {
     margin-bottom: 6px;
   }
 
-  .subtitle {
-    font-size: 1rem;
-    margin-top: 4px;
-  }
-
   header, .tech-stack, #projects, #sandbox {
     text-align: center;
   }
