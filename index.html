@@ -15,66 +15,70 @@
 
   <body>
     <header>
-      <h1 class="main-title">My portfolio :)</h1>
-      <h1 class="main-title">Juan Mañanes</h1>
+      <h1 class="main-title">My simple website :) - Juan Mañanes</h1>
 
       <div class="header-controls">
         <div class="theme-controls">
-          <button class="btn" id="themeToggle" aria-label="Cambiar tema">
+          <button
+            class="btn"
+            id="themeToggle"
+            aria-label="Switch theme | Cambiar tema"
+          >
             Dark / Light
           </button>
-          <label class="color-label"
-            >Background picker →
+          <label class="color-label">
             <input
               type="color"
               id="bgPicker"
-              aria-label="Selector de color de fondo"
+              aria-label="Background color selector | Selector de color de fondo"
             />
+            <br />
+            <br />Background picker | Selector de fondo
           </label>
         </div>
       </div>
 
+      <br />
+
       <h2 class="subtitle">
-        <i
-          >Everything here can be found on my GitHub || Todo esto se puede
-          encontrar en mi GitHub</i
-        >
+        Everything here can be found on my GitHub profile | Todo esto se puede
+        encontrar en mi perfil GitHub
       </h2>
       <button
         class="btn btn-github"
         onclick="window.location.href='https://github.com/mrs4ndman';"
-        aria-label="Ir a GitHub"
+        aria-label="Go to GitHub | Ir a GitHub"
       >
-        🌐 GitHub
+        🌐 My GitHub
       </button>
     </header>
 
     <main>
+      <br />
       <section id="projects">
-        <h2>↓ Serious projects ↓</h2>
+        <h2>↓ Serious projects | Proyectos serios ↓</h2>
         <div class="rose-pine">
           <a href="https://github.com/rose-pine/tmux"
-            ><img
+          ><img
               src="https://img.shields.io/badge/tmux-Ros%C3%A9%20Pine%20-%23ebbcba"
               alt="tmux"
-          /></a>
+            /></a>
           <a href="https://github.com/rose-pine/btop"
-            ><img
+          ><img
               src="https://img.shields.io/badge/btop-Ros%C3%A9%20Pine%20-%23ebbcba"
               alt="btop"
-          /></a>
+            /></a>
         </div>
       </section>
-      <br>
       <section id="start">
         <div class="tech-stack">
-          <h2>↓ Not so serious projects ↓</h2>
+          <h2>↓ Not so serious projects | Proyectos no tan serios ↓</h2>
           <div class="small-btns">
             <button
               class="btn"
               onclick="window.location.href='./random-number-gen';"
             >
-              My first HTML-CSS-JS "app"
+              My first HTML-CSS-JS "project"
             </button>
             <button
               class="btn"
@@ -86,12 +90,11 @@
           </div>
         </div>
       </section>
-
       <!-- Mini sandbox -->
       <section id="sandbox" aria-live="polite">
         <h2>🎮 Mini JavaScript Sandbox</h2>
         <label for="examples">Ejemplos rápidos:</label>
-        <select id="examples" aria-label="Selector de ejemplos">
+        <select id="examples" aria-label="Example selector | Selector de ejemplos">
           <option value="">-- Selecciona un ejemplo --</option>
           <option value="circle">Círculo que sigue al ratón</option>
           <option value="counter">Contador en consola</option>
@@ -107,11 +110,11 @@
             <input
               id="sandbox-bouncing-color"
               type="color"
-              aria-label="Color pelota sandbox"
+              aria-label="| Sandbox ball color | Color pelota sandbox"
             />
           </label>
-          <textarea id="sandbox-code" aria-label="Editor de código">
-// Escribe tu JS aquí</textarea
+          <textarea id="sandbox-code" aria-label=" Code editor | Editor de código">
+            // Escribe tu JS aquí</textarea
           >
           <div class="sandbox-actions">
             <div class="sandbox-buttons">
@@ -127,16 +130,14 @@
         </div>
       </section>
     </main>
-
     <footer>
       <p>
-        <span id="year"></span> - Author: Juan Mañanes - Hosted from
+        <span id="year"></span> - Juan Mañanes - Hosted from
         <a href="https://github.com/mrs4ndman/mrs4ndman.github.io"
-          >GitHub Pages</a
+        >GitHub Pages</a
         >
       </p>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
