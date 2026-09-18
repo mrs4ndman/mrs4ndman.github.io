@@ -36,7 +36,6 @@ button, .btn {
   border: 1px solid var(--btn-hover-bg);
   padding: 10px 20px;
   margin: 10px auto;
-  display: block;
   font-size: medium;
   cursor: pointer;
   border-radius: 8px;
@@ -133,7 +132,6 @@ footer {
     margin: 10px auto;
     font-size: 1.05rem;
     border-radius: 10px;
-    display: block;
     width: auto;
     max-width: 92%;
   }
@@ -206,7 +204,6 @@ footer {
   }
 
   .small-btns .btn {
-    display: block;
     width: auto;
     max-width: 420px;
     margin: 8px auto;

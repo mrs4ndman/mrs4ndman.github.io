@@ -29,7 +29,7 @@
           <label class="color-label">
             <h3>
               Background picker | Selector de fondo
-            </h4>
+            </h3>
             <input
               type="color"
               id="bgPicker"
@@ -40,41 +40,70 @@
       </div>
 
       <br />
+      <hr />
 
+      <h2>↓ Main links ↓</h2>
       <button
         class="btn btn-github"
         onclick="window.location.href='https://github.com/mrs4ndman';"
         aria-label="Go to GitHub | Ir a GitHub"
       >
-        🌐 My GitHub
+        🌐 GitHub
+      </button>
+      <button
+        class="btn btn-github"
+        onclick="window.location.href='https://github.com/mrs4ndman';"
+        aria-label="Go to GitHub | Ir a GitHub"
+      >
+        🌐 Codeberg
       </button>
     </header>
+
+    <hr>
 
     <main>
       <section id="projects">
         <h2>↓ Serious projects | Proyectos serios ↓</h2>
         <div class="rose-pine">
-          <a href="https://github.com/rose-pine/tmux"
-          ><img
+          <a href="https://github.com/rose-pine/tmux">
+            <img
               src="https://img.shields.io/badge/tmux-Ros%C3%A9%20Pine%20theme-%23ebbcba"
-              alt="tmux"
-            /></a>
-          <a href="https://github.com/rose-pine/btop"
-          ><img
+              alt="tmux"/>
+          </a>
+          <a href="https://github.com/rose-pine/btop">
+            <img
               src="https://img.shields.io/badge/btop-Ros%C3%A9%20Pine%20theme-%23ebbcba"
               alt="btop"
-            /></a>
+            />
+          </a>
 
           <br>
-
-          <a href="https://github.com/mrs4ndman/presto" target="blank"><img src="https://img.shields.io/badge/presto-TUI%20music%20player%20-blue" alt="presto project"></a>
-          <a href="https://github.com/mrs4ndman/trackl" target="blank"><img src="https://img.shields.io/badge/trackl-Music%20directory%20analyzer%20-blue" alt="trackl project"></a>
-
           <br>
 
-          <a href="https://github.com/mrs4ndman/wivir" target="blank"><img src="https://img.shields.io/badge/wivir-TUI%20WiFi%20manager%20-blue" alt="wivir project"></a>
+          <a href="https://mrs4ndman.dev" target="blank">
+            <img src="https://img.shields.io/badge/mrs4ndman.dev-This%20simple%20website%20-0037AA" 
+            alt="The source code for this exact website">
+          </a>
+          <a href="https://codeberg.org/mrs4ndman/rpi-docker" target="blank">
+            <img src="https://img.shields.io/badge/Docker%20on%20Raspberry%20Pi-My%20current%20homelab%20setup%20-0037AA" 
+            alt="Raspberry Pi and Docker config">
+          </a>
+
+          <br>
+          <br>
+
+          <a href="https://github.com/mrs4ndman/presto" target="blank">
+            <img src="https://img.shields.io/badge/presto-TUI%20music%20player%20-orange" 
+            alt="presto project">
+          </a>
+          <a href="https://github.com/mrs4ndman/trackl" target="blank">
+            <img src="https://img.shields.io/badge/trackl-Music%20directory%20analyzer%20-orange" 
+            alt="trackl project">
+          </a>
         </div>
       </section>
+      <br>
+        <hr>
       <section id="start">
         <div class="tech-stack">
           <h2>↓ Not so serious projects | Proyectos no tan serios ↓</h2>
@@ -93,10 +122,15 @@
               WIP: My blog subdomain
             </button>
           </div>
+          <h3>
+          · New projects:
+          </h3>
+          <a href="https://github.com/mrs4ndman/tdnr" target="blank"><img src="https://img.shields.io/badge/tdnr-WIP:%20Over--engineered%20to--do app%20-red" alt="tdnr project"></a>
         </div>
       </section>
       <!-- Mini sandbox -->
       <section id="sandbox" aria-live="polite">
+        <hr>
         <h2>🎮 Mini JavaScript Sandbox</h2>
         <label for="examples">Ejemplos rápidos:</label>
         <select id="examples" aria-label="Example selector | Selector de ejemplos">
